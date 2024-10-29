@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+
 /* Container that holds all movies */
 .container {
     display: flex;
@@ -65,3 +76,25 @@
     padding: 0 10px 10px;
     line-height: 1.5;
 }
+
+.about__container {
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 400px;
+    font-weight: 300;
+  }
+  
+  .about__container span:first-child {
+    font-size: 20px;
+  }
+  
+  .about__container span:last-child {
+    display: block;
+    margin-top: 10px;
+  }

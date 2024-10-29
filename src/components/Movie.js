@@ -17,7 +17,7 @@ function Movies({ title, overview, release_date, poster_path }) {
             <div>
                 <h3 className='movie_title'>{title}</h3>
                 <h4 className='movie_release_date'>{release_date}</h4>
-                <p className='movie_summary'>{overview}</p>
+                <p className='movie_summary'>{overview.slice(0, 180)}...</p>
             </div>
         </div>
     );
