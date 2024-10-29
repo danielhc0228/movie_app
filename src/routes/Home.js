@@ -34,18 +34,20 @@ class Home extends React.Component {
                         <span className='loader_text'>Loading...</span>
                     </div>
                 ) : (
-                    <div className='movies'>
-                        {results.map((result) => (
-                            <Movie
-                                key={result.id}
-                                id={result.id}
-                                title={result.title}
-                                overview={result.overview}
-                                release_date={result.release_date}
-                                poster_path={result.poster_path}
-                            />
-                        ))}
-                    </div>
+                    <>
+                        <div className='movies'>
+                            {results.map((result) => (
+                                <Movie
+                                    key={result.id}
+                                    id={result.id}
+                                    title={result.title}
+                                    overview={result.overview}
+                                    release_date={result.release_date}
+                                    poster_path={result.poster_path}
+                                />
+                            ))}
+                        </div>
+                    </>
                 )}
             </section>
         );
